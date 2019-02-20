@@ -12,6 +12,8 @@
 		FB2AACD4221CC532009AD185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2AACD2221CC532009AD185 /* Main.storyboard */; };
 		FB2AACD6221CC538009AD185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2AACD5221CC538009AD185 /* Assets.xcassets */; };
 		FB2AACD9221CC538009AD185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2AACD7221CC538009AD185 /* LaunchScreen.storyboard */; };
+		FB2AAD01221CD42E009AD185 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2AAD00221CD42E009AD185 /* Game.swift */; };
+		FB2AAD06221D14C5009AD185 /* ApplePie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB2AAD04221D14C5009AD185 /* ApplePie.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FB2AACD5221CC538009AD185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB2AACD8221CC538009AD185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB2AACDA221CC538009AD185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2AAD00221CD42E009AD185 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		FB2AAD05221D14C5009AD185 /* Scores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scores.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				FB2AACCE221CC532009AD185 /* AppDelegate.swift */,
 				FB2AACD0221CC532009AD185 /* ViewController.swift */,
+				FB2AAD00221CD42E009AD185 /* Game.swift */,
 				FB2AACD2221CC532009AD185 /* Main.storyboard */,
 				FB2AACD5221CC538009AD185 /* Assets.xcassets */,
 				FB2AACD7221CC538009AD185 /* LaunchScreen.storyboard */,
 				FB2AACDA221CC538009AD185 /* Info.plist */,
+				FB2AAD04221D14C5009AD185 /* ApplePie.xcdatamodeld */,
 			);
 			path = "Apple Pie";
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2AACD1221CC532009AD185 /* ViewController.swift in Sources */,
+				FB2AAD01221CD42E009AD185 /* Game.swift in Sources */,
+				FB2AAD06221D14C5009AD185 /* ApplePie.xcdatamodeld in Sources */,
 				FB2AACCF221CC532009AD185 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +291,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HF636VQ7FU;
 				INFOPLIST_FILE = "Apple Pie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ptobo.Apple-Pie.Apple-Pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -300,7 +310,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HF636VQ7FU;
 				INFOPLIST_FILE = "Apple Pie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ptobo.Apple-Pie.Apple-Pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -334,6 +346,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB2AAD04221D14C5009AD185 /* ApplePie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB2AAD05221D14C5009AD185 /* Scores.xcdatamodel */,
+			);
+			currentVersion = FB2AAD05221D14C5009AD185 /* Scores.xcdatamodel */;
+			path = ApplePie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FB2AACC3221CC532009AD185 /* Project object */;
 }
